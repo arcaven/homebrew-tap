@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Audit formulas
-        run: brew audit --formula Formula/*.rb
+        run: brew audit --strict --formula Formula/*.rb
       - name: Check style
         run: brew style Formula/*.rb
