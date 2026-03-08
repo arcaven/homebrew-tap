@@ -12,7 +12,22 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v6
+
+      - name: Tap local checkout
+        run: |
+          mkdir -p "$(brew --repository)/Library/Taps/arcaven"
+          ln -sf "$GITHUB_WORKSPACE" "$(brew --repository)/Library/Taps/arcaven/homebrew-tap"
+
       - name: Audit formulas
-        run: brew audit --strict --formula Formula/*.rb
+        run: |
+          for f in Formula/*.rb; do
+            name="$(basename "$f" .rb)"
+            brew audit --strict "arcaven/tap/$name"
+          done
+
       - name: Check style
-        run: brew style Formula/*.rb
+        run: |
+          for f in Formula/*.rb; do
+            name="$(basename "$f" .rb)"
+            brew style "arcaven/tap/$name"
+          done
