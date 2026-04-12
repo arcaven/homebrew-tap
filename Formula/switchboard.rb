@@ -1,15 +1,15 @@
 class Switchboard < Formula
   desc "Low-latency encrypted tmux session router"
   homepage "https://github.com/arcavenae/switchboard"
-  version "0.1.0-alpha.20260405.b3e7cf0"
+  version "0.1.0-alpha.20260412.34cea07"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/arcavenae/switchboard/releases/download/alpha-20260405-b3e7cf0/switchboard-darwin-arm64"
-    sha256 "825856727bcb97afde08a7ea3b599d46443f826b718e13a9f97e9d18ff2304cd"
+    url "https://github.com/arcavenae/switchboard/releases/download/alpha-20260412-024453-34cea07/switchboard-darwin-arm64"
+    sha256 "788545825867fb79bd67c36fca2b2cced5d14932b9dcce230ae953dd4ed21434"
   else
-    url "https://github.com/arcavenae/switchboard/releases/download/alpha-20260405-b3e7cf0/switchboard-darwin-amd64"
-    sha256 "ceaf412ec0c607641f85096f7597946498ef2fb889a0558abc5a1736ba8ece3b"
+    url "https://github.com/arcavenae/switchboard/releases/download/alpha-20260412-024453-34cea07/switchboard-darwin-amd64"
+    sha256 "6d15eee48fbc5f8986958512f4331b2925c65499e6f26254325289058fe574ac"
   end
 
   def install
