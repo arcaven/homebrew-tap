@@ -5,9 +5,9 @@
 class ForestageA < Formula
   desc "Opinionated wrapper for Claude Code with persona theming (alpha channel)"
   homepage "https://github.com/arcavenae/forestage"
-  url "https://github.com/arcavenae/forestage/releases/download/alpha-20260413-081106-8d7dd45/forestage-a-darwin-arm64"
-  version "alpha-20260413-081106-8d7dd45"
-  sha256 "2b8c200d7bd3ff6c833d724442635b5292b7fa6bf1cd58f7bbba3aaaba8d2aea"
+  url "https://github.com/arcavenae/forestage/releases/download/alpha-20260413-184630-f70009b/forestage-a-darwin-arm64"
+  version "alpha-20260413-184630-f70009b"
+  sha256 "0497cc852c438b1c1b2c4cb63896b1558020ebc5baa0f593a147f23c71dfa9ee"
   license "MIT"
 
   def install
