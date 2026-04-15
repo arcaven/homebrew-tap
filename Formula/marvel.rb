@@ -6,10 +6,10 @@ class Marvel < Formula
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/ArcavenAE/marvel/releases/download/alpha-20260415-211101-9e7ab47/marvel-darwin-arm64"
-    sha256 "f36148d3081b1f0693747917676f4be1303cd2e9ea521202dd31dee4f100b94b"
+    sha256 "1158821f8cb2ce5b46103d7efd3844ff9363b6e258f14ca837fdcab6fc3de07b"
   elsif OS.mac?
     url "https://github.com/ArcavenAE/marvel/releases/download/alpha-20260415-211101-9e7ab47/marvel-darwin-amd64"
-    sha256 "a34a3051d257a3dbe46d8b947995746801754e37cdfc64b8a650c15c9a0f045a"
+    sha256 "647d72da52edde188dbda2d5006dca3a47ced50fda4f23d67b53caaf32f4939b"
   elsif OS.linux?
     url "https://github.com/ArcavenAE/marvel/releases/download/alpha-20260415-211101-9e7ab47/marvel-linux-amd64"
     sha256 "c7a624d5b29751bc465894a2aa748d9a53df23dfb287814d38cecedf5ac294f8"
